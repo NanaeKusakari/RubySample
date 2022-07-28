@@ -38,6 +38,14 @@ class GreetingsController < ApplicationController
     # 食べ物配列からみかんを削除
     @food_array.delete("みかん")
 
+    # 配列を作成（Javaと違って要素数を増やすことができる）
+    @animal_array = ["ライオン", "キリン", "ウサギ"]
+    # インデックスを指定して追加（値を更新するときも同じ書き方）
+    @animal_array[4] = "しまうま"
+    # 末尾に追加　方法その１
+    @animal_array("アルパカ")
+    # 末尾に追加　方法その２
+    @animal_array << "リス"
     #
   end
 end
